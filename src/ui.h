@@ -35,11 +35,19 @@ void printTabline(int length);
 int printMenu(std::string name, std::string version);
 
 /**
- * Prints all existing users.
+ * Prints all existing students.
  * 
  * @param students Array which contains the students.
  * @param length The length of the array.
  */
 void printStudents(student students[], int length);
+
+/**
+ * Adds a new student.
+ * 
+ * @param students Array which contains the students.
+ * @param length The length of the array.
+ */
+bool addStudent(student students[], int length);
 
 #endif

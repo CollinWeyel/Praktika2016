@@ -50,12 +50,46 @@ void printStudents(student students[], int length){
         std::cout
             << students[i].firstname << " " << students[i].lastname << " (" << students[i].gender << ")" << std::endl
             << "\tMatrikelnummer: " << students[i].number << std::endl
-            << "\tAbschlussnote: " << students[i].endresult << std::endl;
+            << "\tAbschlussnote: " << students[i].endresult << std::endl << std::endl;
     }
 
     if (length == empty){
-        std::cout << "Es sind keine Studenten gespeichert." << std::endl;
+        std::cout << "Es sind keine Studenten gespeichert." << std::endl << std::endl;
     }
-    
-    std::cout << std::endl;
+}
+
+bool addStudent(student students[], int length){
+    int empty = 0, free = -1;
+    student new_student;
+
+    for (int i = 0; i < length; i++){
+        if (students[i].number == 0){
+            empty++;
+            if (free == -1) free = i;
+        }
+    }
+
+    if (empty == 0){
+        std::cout << "Es können keine weiteren Studenten hinzu gefügt werden." << std::endl << std::endl;
+        return false;
+    }
+
+    std::cout << "Bitte gib nun die Daten des Studenten ein." << std::endl << "Vorname: ";
+    std::cin >> new_student.firstname;
+
+    std::cout << "Nachname: ";
+    std::cin >> new_student.lastname;
+
+    std::cout << "Geschlecht (m/w): ";
+    std::cin >> new_student.gender;
+
+    std::cout << "Matrikelnummer: ";
+    std::cin >> new_student.number;
+
+    std::cout << "Abschlussnote: ";
+    std::cin >> new_student.endresult;
+
+    students[free] = new_student;
+
+    return true;
 }

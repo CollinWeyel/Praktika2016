@@ -7,6 +7,8 @@ CFLAGS = -Wall
 _OBJS = main.o ui.o
 OBJS = $(patsubst %,$(ODIR)/%,$(_OBJS))
 
+#all: $(OUTPUT) doc
+
 $(OUTPUT): $(OBJS)
 	g++ $(OBJS) -o $(OUTPUT)
 

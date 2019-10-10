@@ -31,6 +31,10 @@ int main(){
                 std::cout << "Diese Studenten sind aktuell registriert:" << std::endl;
                 printStudents(students, students_length);
                 break;
+
+            case 2:
+                addStudent(students, students_length);
+                break;
             case 7:
                 std::cout << "Das Programm wird beendet." << std::endl;
                 return 0;

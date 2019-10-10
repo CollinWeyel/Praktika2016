@@ -4,9 +4,9 @@
 #include <string>
 
 /**
- * Manager class for everything related to students.
+ * Container class for everything related to students.
  * 
- * @authon Collin Weyel
+ * @author Collin Weyel
  * @file
  */
 

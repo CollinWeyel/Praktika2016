@@ -74,18 +74,27 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define UI</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ui_8h.html#a43b0552e0f6c5bff049f292be8a6ad13">printVersion</a>(std::string name, std::string version);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ui_8h.html#a50ccd1603fa1ed5098397894f23a89da">printTabline</a>(<span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ui_8h.html#a5ec8da921140d2a5e76bd9b60cb658e3">printMenu</a>(std::string name, std::string version);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="student_8h.html">student.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ui_8h.html#a43b0552e0f6c5bff049f292be8a6ad13">printVersion</a>(std::string name, std::string version);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ui_8h.html#a50ccd1603fa1ed5098397894f23a89da">printTabline</a>(<span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ui_8h.html#a5ec8da921140d2a5e76bd9b60cb658e3">printMenu</a>(std::string name, std::string version);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ui_8h.html#a55a550c78fa94455b1f5753acf046d5e">printStudents</a>(<a class="code" href="structstudent.html">student</a> students[], <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ui_8h.html#af99fc2ec10862ef5d0141f42609f1d50">addStudent</a>(<a class="code" href="structstudent.html">student</a> students[], <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aui_8h_html_a43b0552e0f6c5bff049f292be8a6ad13"><div class="ttname"><a href="ui_8h.html#a43b0552e0f6c5bff049f292be8a6ad13">printVersion</a></div><div class="ttdeci">void printVersion(std::string name, std::string version)</div><div class="ttdoc">Prints the version of the program.</div><div class="ttdef"><b>Definition:</b> ui.cpp:4</div></div>
+<div class="ttc" id="astudent_8h_html"><div class="ttname"><a href="student_8h.html">student.h</a></div><div class="ttdoc">Container class for everything related to students.</div></div>
+<div class="ttc" id="aui_8h_html_af99fc2ec10862ef5d0141f42609f1d50"><div class="ttname"><a href="ui_8h.html#af99fc2ec10862ef5d0141f42609f1d50">addStudent</a></div><div class="ttdeci">bool addStudent(student students[], int length)</div><div class="ttdoc">Adds a new student.</div><div class="ttdef"><b>Definition:</b> ui.cpp:63</div></div>
 <div class="ttc" id="aui_8h_html_a5ec8da921140d2a5e76bd9b60cb658e3"><div class="ttname"><a href="ui_8h.html#a5ec8da921140d2a5e76bd9b60cb658e3">printMenu</a></div><div class="ttdeci">int printMenu(std::string name, std::string version)</div><div class="ttdoc">Prints the menu.</div><div class="ttdef"><b>Definition:</b> ui.cpp:19</div></div>
+<div class="ttc" id="astructstudent_html"><div class="ttname"><a href="structstudent.html">student</a></div><div class="ttdoc">Struct to save data belonging to a student.</div><div class="ttdef"><b>Definition:</b> student.h:22</div></div>
 <div class="ttc" id="aui_8h_html_a50ccd1603fa1ed5098397894f23a89da"><div class="ttname"><a href="ui_8h.html#a50ccd1603fa1ed5098397894f23a89da">printTabline</a></div><div class="ttdeci">void printTabline(int length)</div><div class="ttdoc">Prints a line of '-' with variable length.</div><div class="ttdef"><b>Definition:</b> ui.cpp:12</div></div>
+<div class="ttc" id="aui_8h_html_a55a550c78fa94455b1f5753acf046d5e"><div class="ttname"><a href="ui_8h.html#a55a550c78fa94455b1f5753acf046d5e">printStudents</a></div><div class="ttdeci">void printStudents(student students[], int length)</div><div class="ttdoc">Prints all existing students.</div><div class="ttdef"><b>Definition:</b> ui.cpp:39</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
