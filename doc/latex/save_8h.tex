@@ -1,0 +1,67 @@
+\hypertarget{save_8h}{}\doxysection{src/save.h File Reference}
+\label{save_8h}\index{src/save.h@{src/save.h}}
+
+
+Helper to save studens to csv and reimport them.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}student.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{save_8h_a3c50debdbf8519f274c9151f58c2fbf2}{export\+Students}} (\mbox{\hyperlink{structstudent}{student}} students\mbox{[}$\,$\mbox{]}, int length, std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Exports students to csv. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{save_8h_a2db8053ca1c6ce3287e6411f05fa8390}{import\+Students}} (\mbox{\hyperlink{structstudent}{student}} students\mbox{[}$\,$\mbox{]}, int length, std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Imports students to csv. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper to save studens to csv and reimport them. 
+
+Saves students to csv and reads them from file.
+
+\begin{DoxyAuthor}{Author}
+Collin Weyel 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{save_8h_a3c50debdbf8519f274c9151f58c2fbf2}\label{save_8h_a3c50debdbf8519f274c9151f58c2fbf2}} 
+\index{save.h@{save.h}!exportStudents@{exportStudents}}
+\index{exportStudents@{exportStudents}!save.h@{save.h}}
+\doxysubsubsection{\texorpdfstring{exportStudents()}{exportStudents()}}
+{\footnotesize\ttfamily bool export\+Students (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}}}]{students\mbox{[}$\,$\mbox{]},  }\item[{int}]{length,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Exports students to csv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em students\mbox{[}$\,$\mbox{]}} & The students to be saved. \\
+\hline
+{\em length} & The length of the students array. \\
+\hline
+{\em filename} & The file to be written. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{save_8h_a2db8053ca1c6ce3287e6411f05fa8390}\label{save_8h_a2db8053ca1c6ce3287e6411f05fa8390}} 
+\index{save.h@{save.h}!importStudents@{importStudents}}
+\index{importStudents@{importStudents}!save.h@{save.h}}
+\doxysubsubsection{\texorpdfstring{importStudents()}{importStudents()}}
+{\footnotesize\ttfamily bool import\+Students (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}}}]{students\mbox{[}$\,$\mbox{]},  }\item[{int}]{length,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Imports students to csv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em students\mbox{[}$\,$\mbox{]}} & Where the students should be written to. \\
+\hline
+{\em length} & The length of the students array. \\
+\hline
+{\em filename} & The file to be read. \\
+\hline
+\end{DoxyParams}

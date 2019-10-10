@@ -4,7 +4,7 @@ SDIR = src
 
 CFLAGS = -Wall
 
-_OBJS = main.o ui.o
+_OBJS = main.o ui.o save.o
 OBJS = $(patsubst %,$(ODIR)/%,$(_OBJS))
 
 #all: $(OUTPUT) doc

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_1',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['main_2ecpp_2',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['exportstudents_1',['exportStudents',['../save_8h.html#a3c50debdbf8519f274c9151f58c2fbf2',1,'save.cpp']]]
 ];
