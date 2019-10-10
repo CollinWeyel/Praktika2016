@@ -13,6 +13,9 @@ $(OUTPUT): $(OBJS)
 $(ODIR)/%.o: $(SDIR)/%.cpp
 	g++ -c -o $@ $< $(CFLAGS)
 
+$(ODIR):
+	mkdir $@
+
 clean:
 	rm -f $(ODIR)/*.o $(OUTPUT)
 

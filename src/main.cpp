@@ -26,7 +26,7 @@ int main(){
     student students[students_length];
 
     while (true){
-        switch (int choice = printMenu(name, version)){
+        switch (printMenu(name, version)){
             case 1:
                 std::cout << "Diese Studenten sind aktuell registriert:" << std::endl;
                 printStudents(students, students_length);
