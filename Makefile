@@ -18,6 +18,8 @@ $(ODIR)/%.o: $(SDIR)/%.cpp
 $(ODIR):
 	mkdir $@
 
+all: $(OUTPUT) doc
+
 clean:
 	rm -f $(ODIR)/*.o $(OUTPUT)
 
