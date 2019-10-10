@@ -9,6 +9,7 @@
  */ 
 
 #include <string>
+#include "student.h"
 
 /**
  * Prints the version of the program.
@@ -32,5 +33,13 @@ void printTabline(int length);
  * @param version The version of the program.
  */
 int printMenu(std::string name, std::string version);
+
+/**
+ * Prints all existing users.
+ * 
+ * @param students Array which contains the students.
+ * @param length The length of the array.
+ */
+void printStudents(student students[], int length);
 
 #endif

@@ -22,17 +22,22 @@
  */
 int main(){
     std::string name = "Studentenverwaltung", version = "V0.2";
-    student students[10];
+    int students_length = 10;
+    student students[students_length];
 
     while (true){
         switch (int choice = printMenu(name, version)){
-        case 7:
-            std::cout << "Das Programm wird beendet." << std::endl;
-            return 0;
-            break;
-        default:
-            std::cout << "Diese Funktion existiert noch nicht." << std::endl << std::endl;
-            break;
+            case 1:
+                std::cout << "Diese Studenten sind aktuell registriert:" << std::endl;
+                printStudents(students, students_length);
+                break;
+            case 7:
+                std::cout << "Das Programm wird beendet." << std::endl;
+                return 0;
+                break;
+            default:
+                std::cout << "Diese Funktion existiert noch nicht." << std::endl << std::endl;
+                break;
         }
     }
 }

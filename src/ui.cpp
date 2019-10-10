@@ -35,3 +35,27 @@ int printMenu(std::string name, std::string version){
 
     return choice;
 }
+
+void printStudents(student students[], int length){
+    int empty = 0;
+
+    std::cout << std::endl;
+
+    for (int i = 0; i < length; i++){
+        if (students[i].number == 0){
+            empty++;
+            continue;
+        }
+
+        std::cout
+            << students[i].firstname << " " << students[i].lastname << " (" << students[i].gender << ")" << std::endl
+            << "\tMatrikelnummer: " << students[i].number << std::endl
+            << "\tAbschlussnote: " << students[i].endresult << std::endl;
+    }
+
+    if (length == empty){
+        std::cout << "Es sind keine Studenten gespeichert." << std::endl;
+    }
+    
+    std::cout << std::endl;
+}
