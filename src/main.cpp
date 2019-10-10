@@ -9,15 +9,20 @@
 
 #include <iostream>
 #include "ui.h"
+#include "student.h"
 
 /**
  * Repeats the menu and all functions.
  * 
  * Runs indefinetely till the user chooses to end the programm.
- */ 
-
+ * 
+ * @param name Name of the program.
+ * @param version Version of the program.
+ * @param students Array to store the existing students.
+ */
 int main(){
-    std::string name = "Studentenverwaltung", version = "V0.1";
+    std::string name = "Studentenverwaltung", version = "V0.2";
+    student students[10];
 
     while (true){
         switch (int choice = printMenu(name, version)){
