@@ -38,7 +38,7 @@ int main(){
                 std::cout << "Die Studenten wurden importiert." << std::endl;
                 break;
             case 6:
-                exportStudents(students, students_length, exportfile);
+                exportStudents(students, exportfile);
                 std::cout << "Die Studenten wurden exportiert." << std::endl;
                 break;
             case 7:

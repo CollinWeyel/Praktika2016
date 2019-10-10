@@ -36,7 +36,7 @@ int printMenu(std::string name, std::string version){
     return choice;
 }
 
-void printStudents(student *students, int length){
+void printStudents(student *students){
     student working_student = *students;
 
     if (students == NULL){
@@ -47,42 +47,35 @@ void printStudents(student *students, int length){
     std::cout << std::endl;
 
     do{
-        
+        std::cout
+            << working_student.firstname << " " << working_student.lastname << " (" << working_student.gender << ")" << std::endl
+            << "\tMatrikelnummer: " << working_student.number << std::endl
+            << "\tAbschlussnote: " << working_student.endresult << std::endl << std::endl;
     } while (&(working_student = *working_student.child) != NULL);
 }
 
-bool addStudent(student students[], int length){
-    int empty = 0, free = -1;
-    student new_student;
+bool addStudent(student *students){
+    student dummy;
+    student working_student = *students;
 
-    for (int i = 0; i < length; i++){
-        if (students[i].number == 0){
-            empty++;
-            if (free == -1) free = i;
-        }
-    }
-
-    if (empty == 0){
-        std::cout << "Es können keine weiteren Studenten hinzu gefügt werden." << std::endl << std::endl;
-        return false;
-    }
+    while (students != NULL && &(working_student = *working_student.child) != NULL);
 
     std::cout << "Bitte gib nun die Daten des Studenten ein." << std::endl << "Vorname: ";
-    std::cin >> new_student.firstname;
+    std::cin >> dummy.firstname;
 
     std::cout << "Nachname: ";
-    std::cin >> new_student.lastname;
+    std::cin >> dummy.lastname;
 
     std::cout << "Geschlecht (m/w): ";
-    std::cin >> new_student.gender;
+    std::cin >> dummy.gender;
 
     std::cout << "Matrikelnummer: ";
-    std::cin >> new_student.number;
+    std::cin >> dummy.number;
 
     std::cout << "Abschlussnote: ";
-    std::cin >> new_student.endresult;
+    std::cin >> dummy.endresult;
 
-    students[free] = new_student;
+    working_student.child = &dummy;
 
     return true;
 }
