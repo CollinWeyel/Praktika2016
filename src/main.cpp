@@ -22,20 +22,19 @@ int main(){
         version = "V0.2",
         importfile = "import.csv",
         exportfile = "export.csv";
-    int students_length = 10;
-    student students[students_length];
+    student *students = NULL;
 
     while (true){
         switch (printMenu(name, version)){
             case 1:
                 std::cout << "Diese Studenten sind aktuell registriert:" << std::endl;
-                printStudents(students, students_length);
+                printStudents(students);
                 break;
             case 2:
-                addStudent(students, students_length);
+                addStudent(students);
                 break;
             case 5:
-                importStudents(students, students_length, importfile);
+                importStudents(students, importfile);
                 std::cout << "Die Studenten wurden importiert." << std::endl;
                 break;
             case 6:

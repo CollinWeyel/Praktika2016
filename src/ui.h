@@ -37,17 +37,15 @@ int printMenu(std::string name, std::string version);
 /**
  * Prints all existing students.
  * 
- * @param students Array which contains the students.
- * @param length The length of the array.
+ * @param students Pointer to the first student.
  */
-void printStudents(student students[], int length);
+void printStudents(student *students);
 
 /**
  * Adds a new student.
  * 
- * @param students Array which contains the students.
- * @param length The length of the array.
+ * @param students Pointer to the first student.
  */
-bool addStudent(student students[], int length);
+bool addStudent(student *students);
 
 #endif

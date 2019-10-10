@@ -20,6 +20,8 @@
  * @param endresult The endresult of the student.
  */
 struct student{
+    student *parent = NULL,
+            *child = NULL;
     std::string firstname = "",
                 lastname = "";
     char gender = ' ';
