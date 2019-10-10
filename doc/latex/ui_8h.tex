@@ -1,0 +1,77 @@
+\hypertarget{ui_8h}{}\doxysection{src/ui.h File Reference}
+\label{ui_8h}\index{src/ui.h@{src/ui.h}}
+
+
+Manages everything the user sees.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ui_8h_a43b0552e0f6c5bff049f292be8a6ad13}{print\+Version}} (std\+::string name, std\+::string version)
+\begin{DoxyCompactList}\small\item\em Prints the version of the program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ui_8h_a50ccd1603fa1ed5098397894f23a89da}{print\+Tabline}} (int length)
+\begin{DoxyCompactList}\small\item\em Prints a line of \textquotesingle{}-\/\textquotesingle{} with variable length. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ui_8h_a5ec8da921140d2a5e76bd9b60cb658e3}{print\+Menu}} (std\+::string name, std\+::string version)
+\begin{DoxyCompactList}\small\item\em Prints the menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages everything the user sees. 
+
+\begin{DoxyAuthor}{Author}
+Collin Weyel 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ui_8h_a5ec8da921140d2a5e76bd9b60cb658e3}\label{ui_8h_a5ec8da921140d2a5e76bd9b60cb658e3}} 
+\index{ui.h@{ui.h}!printMenu@{printMenu}}
+\index{printMenu@{printMenu}!ui.h@{ui.h}}
+\doxysubsubsection{\texorpdfstring{printMenu()}{printMenu()}}
+{\footnotesize\ttfamily int print\+Menu (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{version }\end{DoxyParamCaption})}
+
+
+
+Prints the menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the program. \\
+\hline
+{\em version} & The version of the program. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ui_8h_a50ccd1603fa1ed5098397894f23a89da}\label{ui_8h_a50ccd1603fa1ed5098397894f23a89da}} 
+\index{ui.h@{ui.h}!printTabline@{printTabline}}
+\index{printTabline@{printTabline}!ui.h@{ui.h}}
+\doxysubsubsection{\texorpdfstring{printTabline()}{printTabline()}}
+{\footnotesize\ttfamily void print\+Tabline (\begin{DoxyParamCaption}\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Prints a line of \textquotesingle{}-\/\textquotesingle{} with variable length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & Number of \textquotesingle{}-\/\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ui_8h_a43b0552e0f6c5bff049f292be8a6ad13}\label{ui_8h_a43b0552e0f6c5bff049f292be8a6ad13}} 
+\index{ui.h@{ui.h}!printVersion@{printVersion}}
+\index{printVersion@{printVersion}!ui.h@{ui.h}}
+\doxysubsubsection{\texorpdfstring{printVersion()}{printVersion()}}
+{\footnotesize\ttfamily void print\+Version (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{version }\end{DoxyParamCaption})}
+
+
+
+Prints the version of the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the program. \\
+\hline
+{\em version} & The version of the program. \\
+\hline
+\end{DoxyParams}
