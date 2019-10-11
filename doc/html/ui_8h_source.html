@@ -82,19 +82,19 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">int</span> <a class="code" href="ui_8h.html#a5ec8da921140d2a5e76bd9b60cb658e3">printMenu</a>(std::string name, std::string version);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ui_8h.html#a55a550c78fa94455b1f5753acf046d5e">printStudents</a>(<a class="code" href="structstudent.html">student</a> students[], <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ui_8h.html#af99fc2ec10862ef5d0141f42609f1d50">addStudent</a>(<a class="code" href="structstudent.html">student</a> students[], <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ui_8h.html#ad17b1a0ffdd354c83ea24309a33ee7a7">printStudents</a>(<a class="code" href="structstudent.html">student</a> **students);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ui_8h.html#a05b145498fb5489d846d53b6e12cbfb2">addStudent</a>(<a class="code" href="structstudent.html">student</a> **students);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aui_8h_html_a43b0552e0f6c5bff049f292be8a6ad13"><div class="ttname"><a href="ui_8h.html#a43b0552e0f6c5bff049f292be8a6ad13">printVersion</a></div><div class="ttdeci">void printVersion(std::string name, std::string version)</div><div class="ttdoc">Prints the version of the program.</div><div class="ttdef"><b>Definition:</b> ui.cpp:4</div></div>
+<div class="ttc" id="aui_8h_html_ad17b1a0ffdd354c83ea24309a33ee7a7"><div class="ttname"><a href="ui_8h.html#ad17b1a0ffdd354c83ea24309a33ee7a7">printStudents</a></div><div class="ttdeci">void printStudents(student **students)</div><div class="ttdoc">Prints all existing students.</div><div class="ttdef"><b>Definition:</b> ui.cpp:39</div></div>
 <div class="ttc" id="astudent_8h_html"><div class="ttname"><a href="student_8h.html">student.h</a></div><div class="ttdoc">Container class for everything related to students.</div></div>
-<div class="ttc" id="aui_8h_html_af99fc2ec10862ef5d0141f42609f1d50"><div class="ttname"><a href="ui_8h.html#af99fc2ec10862ef5d0141f42609f1d50">addStudent</a></div><div class="ttdeci">bool addStudent(student students[], int length)</div><div class="ttdoc">Adds a new student.</div><div class="ttdef"><b>Definition:</b> ui.cpp:61</div></div>
+<div class="ttc" id="aui_8h_html_a05b145498fb5489d846d53b6e12cbfb2"><div class="ttname"><a href="ui_8h.html#a05b145498fb5489d846d53b6e12cbfb2">addStudent</a></div><div class="ttdeci">bool addStudent(student **students)</div><div class="ttdoc">Adds a new student.</div><div class="ttdef"><b>Definition:</b> ui.cpp:59</div></div>
 <div class="ttc" id="aui_8h_html_a5ec8da921140d2a5e76bd9b60cb658e3"><div class="ttname"><a href="ui_8h.html#a5ec8da921140d2a5e76bd9b60cb658e3">printMenu</a></div><div class="ttdeci">int printMenu(std::string name, std::string version)</div><div class="ttdoc">Prints the menu.</div><div class="ttdef"><b>Definition:</b> ui.cpp:19</div></div>
 <div class="ttc" id="astructstudent_html"><div class="ttname"><a href="structstudent.html">student</a></div><div class="ttdoc">Struct to save data belonging to a student.</div><div class="ttdef"><b>Definition:</b> student.h:22</div></div>
 <div class="ttc" id="aui_8h_html_a50ccd1603fa1ed5098397894f23a89da"><div class="ttname"><a href="ui_8h.html#a50ccd1603fa1ed5098397894f23a89da">printTabline</a></div><div class="ttdeci">void printTabline(int length)</div><div class="ttdoc">Prints a line of '-' with variable length.</div><div class="ttdef"><b>Definition:</b> ui.cpp:12</div></div>
-<div class="ttc" id="aui_8h_html_a55a550c78fa94455b1f5753acf046d5e"><div class="ttname"><a href="ui_8h.html#a55a550c78fa94455b1f5753acf046d5e">printStudents</a></div><div class="ttdeci">void printStudents(student students[], int length)</div><div class="ttdoc">Prints all existing students.</div><div class="ttdef"><b>Definition:</b> ui.cpp:39</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

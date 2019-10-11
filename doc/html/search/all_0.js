@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['addstudent_0',['addStudent',['../ui_8h.html#af99fc2ec10862ef5d0141f42609f1d50',1,'ui.cpp']]]
+  ['addstudent_0',['addStudent',['../ui_8h.html#a05b145498fb5489d846d53b6e12cbfb2',1,'ui.cpp']]]
 ];

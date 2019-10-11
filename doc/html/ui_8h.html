@@ -91,19 +91,19 @@ Functions</h2></td></tr>
 <tr class="memitem:a5ec8da921140d2a5e76bd9b60cb658e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui_8h.html#a5ec8da921140d2a5e76bd9b60cb658e3">printMenu</a> (std::string name, std::string version)</td></tr>
 <tr class="memdesc:a5ec8da921140d2a5e76bd9b60cb658e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the menu.  <a href="ui_8h.html#a5ec8da921140d2a5e76bd9b60cb658e3">More...</a><br /></td></tr>
 <tr class="separator:a5ec8da921140d2a5e76bd9b60cb658e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55a550c78fa94455b1f5753acf046d5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui_8h.html#a55a550c78fa94455b1f5753acf046d5e">printStudents</a> (<a class="el" href="structstudent.html">student</a> students[], int length)</td></tr>
-<tr class="memdesc:a55a550c78fa94455b1f5753acf046d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all existing students.  <a href="ui_8h.html#a55a550c78fa94455b1f5753acf046d5e">More...</a><br /></td></tr>
-<tr class="separator:a55a550c78fa94455b1f5753acf046d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99fc2ec10862ef5d0141f42609f1d50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui_8h.html#af99fc2ec10862ef5d0141f42609f1d50">addStudent</a> (<a class="el" href="structstudent.html">student</a> students[], int length)</td></tr>
-<tr class="memdesc:af99fc2ec10862ef5d0141f42609f1d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new student.  <a href="ui_8h.html#af99fc2ec10862ef5d0141f42609f1d50">More...</a><br /></td></tr>
-<tr class="separator:af99fc2ec10862ef5d0141f42609f1d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17b1a0ffdd354c83ea24309a33ee7a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui_8h.html#ad17b1a0ffdd354c83ea24309a33ee7a7">printStudents</a> (<a class="el" href="structstudent.html">student</a> **students)</td></tr>
+<tr class="memdesc:ad17b1a0ffdd354c83ea24309a33ee7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all existing students.  <a href="ui_8h.html#ad17b1a0ffdd354c83ea24309a33ee7a7">More...</a><br /></td></tr>
+<tr class="separator:ad17b1a0ffdd354c83ea24309a33ee7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b145498fb5489d846d53b6e12cbfb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ui_8h.html#a05b145498fb5489d846d53b6e12cbfb2">addStudent</a> (<a class="el" href="structstudent.html">student</a> **students)</td></tr>
+<tr class="memdesc:a05b145498fb5489d846d53b6e12cbfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new student.  <a href="ui_8h.html#a05b145498fb5489d846d53b6e12cbfb2">More...</a><br /></td></tr>
+<tr class="separator:a05b145498fb5489d846d53b6e12cbfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages everything the user sees. </p>
 <dl class="section author"><dt>Author</dt><dd>Collin Weyel </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="af99fc2ec10862ef5d0141f42609f1d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af99fc2ec10862ef5d0141f42609f1d50">&#9670;&nbsp;</a></span>addStudent()</h2>
+<a id="a05b145498fb5489d846d53b6e12cbfb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b145498fb5489d846d53b6e12cbfb2">&#9670;&nbsp;</a></span>addStudent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,19 +111,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool addStudent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstudent.html">student</a>&#160;</td>
-          <td class="paramname"><em>students</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="structstudent.html">student</a> **&#160;</td>
+          <td class="paramname"><em>students</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -131,8 +121,7 @@ Functions</h2></td></tr>
 <p>Adds a new student. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">students</td><td>Array which contains the students. </td></tr>
-    <tr><td class="paramname">length</td><td>The length of the array. </td></tr>
+    <tr><td class="paramname">students</td><td>Pointer to the first student. </td></tr>
   </table>
   </dd>
 </dl>
@@ -176,8 +165,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a55a550c78fa94455b1f5753acf046d5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55a550c78fa94455b1f5753acf046d5e">&#9670;&nbsp;</a></span>printStudents()</h2>
+<a id="ad17b1a0ffdd354c83ea24309a33ee7a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad17b1a0ffdd354c83ea24309a33ee7a7">&#9670;&nbsp;</a></span>printStudents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,19 +174,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void printStudents </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structstudent.html">student</a>&#160;</td>
-          <td class="paramname"><em>students</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="structstudent.html">student</a> **&#160;</td>
+          <td class="paramname"><em>students</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -205,8 +184,7 @@ Functions</h2></td></tr>
 <p>Prints all existing students. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">students</td><td>Array which contains the students. </td></tr>
-    <tr><td class="paramname">length</td><td>The length of the array. </td></tr>
+    <tr><td class="paramname">students</td><td>Pointer to the first student. </td></tr>
   </table>
   </dd>
 </dl>

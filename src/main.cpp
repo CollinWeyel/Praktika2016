@@ -19,10 +19,11 @@
  */
 int main(){
     std::string name = "Studentenverwaltung",
-        version = "V0.2",
+        version = "V0.4",
         importfile = "import.csv",
         exportfile = "export.csv";
-    student *students = NULL;
+    student s;
+    student *students = &s;
 
     while (true){
         switch (printMenu(name, version)){
@@ -31,14 +32,14 @@ int main(){
                 printStudents(students);
                 break;
             case 2:
-                addStudent(students);
+                addStudent(&students);
                 break;
             case 5:
-                importStudents(students, importfile);
+                importStudents(&students, importfile);
                 std::cout << "Die Studenten wurden importiert." << std::endl;
                 break;
             case 6:
-                exportStudents(students, exportfile);
+                exportStudents(&students, exportfile);
                 std::cout << "Die Studenten wurden exportiert." << std::endl;
                 break;
             case 7:

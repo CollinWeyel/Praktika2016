@@ -20,7 +20,7 @@
  * @param length The length of the students array.
  * @param filename The file to be written.
  */
-bool exportStudents(student *students, std::string filename);
+bool exportStudents(student **students, std::string filename);
 
 /**
  * Imports students to csv.
@@ -29,6 +29,6 @@ bool exportStudents(student *students, std::string filename);
  * @param length The length of the students array.
  * @param filename The file to be read.
  */
-bool importStudents(student *students, std::string filename);
+bool importStudents(student **students, std::string filename);
 
 #endif

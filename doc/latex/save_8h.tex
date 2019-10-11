@@ -10,9 +10,9 @@ Helper to save studens to csv and reimport them.
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{save_8h_a3c50debdbf8519f274c9151f58c2fbf2}{export\+Students}} (\mbox{\hyperlink{structstudent}{student}} students\mbox{[}$\,$\mbox{]}, int length, std\+::string filename)
+bool \mbox{\hyperlink{save_8h_a5ad5f1a2403badbccdc06ac81b82558f}{export\+Students}} (\mbox{\hyperlink{structstudent}{student}} $\ast$$\ast$students, std\+::string filename)
 \begin{DoxyCompactList}\small\item\em Exports students to csv. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{save_8h_a2db8053ca1c6ce3287e6411f05fa8390}{import\+Students}} (\mbox{\hyperlink{structstudent}{student}} students\mbox{[}$\,$\mbox{]}, int length, std\+::string filename)
+bool \mbox{\hyperlink{save_8h_a24af199e8c50aff05ab803517d04c52b}{import\+Students}} (\mbox{\hyperlink{structstudent}{student}} $\ast$$\ast$students, std\+::string filename)
 \begin{DoxyCompactList}\small\item\em Imports students to csv. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -27,11 +27,11 @@ Collin Weyel
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{save_8h_a3c50debdbf8519f274c9151f58c2fbf2}\label{save_8h_a3c50debdbf8519f274c9151f58c2fbf2}} 
+\mbox{\Hypertarget{save_8h_a5ad5f1a2403badbccdc06ac81b82558f}\label{save_8h_a5ad5f1a2403badbccdc06ac81b82558f}} 
 \index{save.h@{save.h}!exportStudents@{exportStudents}}
 \index{exportStudents@{exportStudents}!save.h@{save.h}}
 \doxysubsubsection{\texorpdfstring{exportStudents()}{exportStudents()}}
-{\footnotesize\ttfamily bool export\+Students (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}}}]{students\mbox{[}$\,$\mbox{]},  }\item[{int}]{length,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool export\+Students (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}} $\ast$$\ast$}]{students,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
 
 
 
@@ -46,11 +46,11 @@ Exports students to csv.
 {\em filename} & The file to be written. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{save_8h_a2db8053ca1c6ce3287e6411f05fa8390}\label{save_8h_a2db8053ca1c6ce3287e6411f05fa8390}} 
+\mbox{\Hypertarget{save_8h_a24af199e8c50aff05ab803517d04c52b}\label{save_8h_a24af199e8c50aff05ab803517d04c52b}} 
 \index{save.h@{save.h}!importStudents@{importStudents}}
 \index{importStudents@{importStudents}!save.h@{save.h}}
 \doxysubsubsection{\texorpdfstring{importStudents()}{importStudents()}}
-{\footnotesize\ttfamily bool import\+Students (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}}}]{students\mbox{[}$\,$\mbox{]},  }\item[{int}]{length,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool import\+Students (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}} $\ast$$\ast$}]{students,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
 
 
 

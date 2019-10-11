@@ -39,26 +39,28 @@ int printMenu(std::string name, std::string version){
 void printStudents(student *students){
     student working_student = *students;
 
-    if (students == NULL){
+    if (!working_student.number){
         std::cout << "Es sind keine Studenten gespeichert." << std::endl << std::endl;
         return;
     }
     
     std::cout << std::endl;
 
-    do{
+    while (!working_student.number){
         std::cout
             << working_student.firstname << " " << working_student.lastname << " (" << working_student.gender << ")" << std::endl
             << "\tMatrikelnummer: " << working_student.number << std::endl
             << "\tAbschlussnote: " << working_student.endresult << std::endl << std::endl;
-    } while (&(working_student = *working_student.child) != NULL);
+        
+       working_student = *working_student.child;
+    }
 }
 
-bool addStudent(student *students){
+bool addStudent(student **students){
     student dummy;
-    student working_student = *students;
+    student working_student = **students;
 
-    while (students != NULL && &(working_student = *working_student.child) != NULL);
+    //while (working_student && &(working_student = working_student->child));
 
     std::cout << "Bitte gib nun die Daten des Studenten ein." << std::endl << "Vorname: ";
     std::cin >> dummy.firstname;
@@ -75,7 +77,14 @@ bool addStudent(student *students){
     std::cout << "Abschlussnote: ";
     std::cin >> dummy.endresult;
 
-    working_student.child = &dummy;
+    if (!working_student.number){
+        working_student = dummy;
+    } else {
+        working_student.child = &dummy;
+        working_student = dummy;
+    }
+
+    *students = &working_student;
 
     return true;
 }

@@ -46,6 +46,6 @@ void printStudents(student *students);
  * 
  * @param students Pointer to the first student.
  */
-bool addStudent(student *students);
+bool addStudent(student **students);
 
 #endif

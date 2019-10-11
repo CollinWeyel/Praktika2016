@@ -16,9 +16,9 @@ void \mbox{\hyperlink{ui_8h_a50ccd1603fa1ed5098397894f23a89da}{print\+Tabline}} 
 \begin{DoxyCompactList}\small\item\em Prints a line of \textquotesingle{}-\/\textquotesingle{} with variable length. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{ui_8h_a5ec8da921140d2a5e76bd9b60cb658e3}{print\+Menu}} (std\+::string name, std\+::string version)
 \begin{DoxyCompactList}\small\item\em Prints the menu. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{ui_8h_a55a550c78fa94455b1f5753acf046d5e}{print\+Students}} (\mbox{\hyperlink{structstudent}{student}} students\mbox{[}$\,$\mbox{]}, int length)
+void \mbox{\hyperlink{ui_8h_ad17b1a0ffdd354c83ea24309a33ee7a7}{print\+Students}} (\mbox{\hyperlink{structstudent}{student}} $\ast$$\ast$students)
 \begin{DoxyCompactList}\small\item\em Prints all existing students. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{ui_8h_af99fc2ec10862ef5d0141f42609f1d50}{add\+Student}} (\mbox{\hyperlink{structstudent}{student}} students\mbox{[}$\,$\mbox{]}, int length)
+bool \mbox{\hyperlink{ui_8h_a05b145498fb5489d846d53b6e12cbfb2}{add\+Student}} (\mbox{\hyperlink{structstudent}{student}} $\ast$$\ast$students)
 \begin{DoxyCompactList}\small\item\em Adds a new student. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -31,11 +31,11 @@ Collin Weyel
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{ui_8h_af99fc2ec10862ef5d0141f42609f1d50}\label{ui_8h_af99fc2ec10862ef5d0141f42609f1d50}} 
+\mbox{\Hypertarget{ui_8h_a05b145498fb5489d846d53b6e12cbfb2}\label{ui_8h_a05b145498fb5489d846d53b6e12cbfb2}} 
 \index{ui.h@{ui.h}!addStudent@{addStudent}}
 \index{addStudent@{addStudent}!ui.h@{ui.h}}
 \doxysubsubsection{\texorpdfstring{addStudent()}{addStudent()}}
-{\footnotesize\ttfamily bool add\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}}}]{students\mbox{[}$\,$\mbox{]},  }\item[{int}]{length }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool add\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}} $\ast$$\ast$}]{students }\end{DoxyParamCaption})}
 
 
 
@@ -43,9 +43,7 @@ Adds a new student.
 
 
 \begin{DoxyParams}{Parameters}
-{\em students} & Array which contains the students. \\
-\hline
-{\em length} & The length of the array. \\
+{\em students} & Pointer to the first student. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{ui_8h_a5ec8da921140d2a5e76bd9b60cb658e3}\label{ui_8h_a5ec8da921140d2a5e76bd9b60cb658e3}} 
@@ -65,11 +63,11 @@ Prints the menu.
 {\em version} & The version of the program. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{ui_8h_a55a550c78fa94455b1f5753acf046d5e}\label{ui_8h_a55a550c78fa94455b1f5753acf046d5e}} 
+\mbox{\Hypertarget{ui_8h_ad17b1a0ffdd354c83ea24309a33ee7a7}\label{ui_8h_ad17b1a0ffdd354c83ea24309a33ee7a7}} 
 \index{ui.h@{ui.h}!printStudents@{printStudents}}
 \index{printStudents@{printStudents}!ui.h@{ui.h}}
 \doxysubsubsection{\texorpdfstring{printStudents()}{printStudents()}}
-{\footnotesize\ttfamily void print\+Students (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}}}]{students\mbox{[}$\,$\mbox{]},  }\item[{int}]{length }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void print\+Students (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstudent}{student}} $\ast$$\ast$}]{students }\end{DoxyParamCaption})}
 
 
 
@@ -77,9 +75,7 @@ Prints all existing students.
 
 
 \begin{DoxyParams}{Parameters}
-{\em students} & Array which contains the students. \\
-\hline
-{\em length} & The length of the array. \\
+{\em students} & Pointer to the first student. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{ui_8h_a50ccd1603fa1ed5098397894f23a89da}\label{ui_8h_a50ccd1603fa1ed5098397894f23a89da}} 
